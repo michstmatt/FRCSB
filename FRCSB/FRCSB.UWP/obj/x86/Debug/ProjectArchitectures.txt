@@ -1,0 +1,3 @@
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\FRCSB.FRC.csproj;neutral
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.UWP\FRCSB.UWP.csproj;x86
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB\FRCSB.csproj;neutral

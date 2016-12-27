@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.MatchInfoPage" BackgroundColor="{DynamicResource PrimaryDark}">
 	<ContentPage.Content>
 		<StackLayout>
-			<Grid BackgroundColor="{DynamicResource TextIcon}" Margin="0,5" >
+			<Grid  Padding="0,5" >
 						<Grid.ColumnDefinitions>
 								<ColumnDefinition Width="*"/>
 								<ColumnDefinition Width="*"/>

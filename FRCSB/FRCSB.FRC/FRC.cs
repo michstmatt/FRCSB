@@ -30,6 +30,10 @@ namespace FRCSB.FRC
     }
     public class EventGroup : ObservableCollection<object>
     {
+        public EventGroup(string header, IEnumerable<object> items):base(items)
+        {
+            Header = header;
+        }
         public EventGroup(IEnumerable<object> items) : base(items)
         {
         }

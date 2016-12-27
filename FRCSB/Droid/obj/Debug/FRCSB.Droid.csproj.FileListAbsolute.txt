@@ -1,0 +1,2 @@
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\Droid\obj\Debug\FRCSB.Droid.csprojResolveAssemblyReference.cache
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\Droid\obj\Debug\FRCSB.Droid.dll

@@ -43,12 +43,13 @@ namespace FRCSB.FRC
 
         public async Task<List<Match>> getMatches()
         {
-            if (team.events == null)
-                await getEvents();
+            List<EventModel> events = team.events;
+            if (events == null)
+                events =await getEvents();
 			
             team.matches = new List<Match>();
 
-            foreach (EventService ev in team.events)
+            foreach (EventService ev in events)
             {
                 team.matches.AddRange(await ev.getTeamMatches(team));
             }
@@ -59,15 +60,23 @@ namespace FRCSB.FRC
 
         public async Task<List<EventGroup>> getMatchesGrouped()
         {
-           team.matches= await getMatches();
-           return( from m in team.matches
-                             orderby m.time descending
-                             group m by m.event_key into grouped
-                             select
-                                new EventGroup(grouped)
-                                {
-                                Header = grouped.Key
-                                }).ToList();
+            List<EventGroup> grouped = new List<EventGroup>();
+            List<EventModel> events = team.events;
+            List<Match> eventMatches;
+            if (events == null)
+                events = await getEvents();
+
+            team.matches = new List<Match>();
+            return (await Task.WhenAll(events.Select(async ev => {
+                eventMatches = await ((EventService)ev).getTeamMatches(team);
+                team.matches.AddRange(eventMatches);
+                return new EventGroup(ev.name,eventMatches);
+                }))).ToList();
+            
+             
+
+           
+            
         }
 
         public async Task<List<Award>> getAwards()

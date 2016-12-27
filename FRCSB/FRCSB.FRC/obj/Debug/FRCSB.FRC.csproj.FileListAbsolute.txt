@@ -1,0 +1,8 @@
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\bin\Debug\FRCSB.FRC.dll
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\bin\Debug\FRCSB.FRC.pdb
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\obj\Debug\FRCSB.FRC.dll
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\obj\Debug\FRCSB.FRC.pdb
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\obj\Debug\FRCSB.FRC.dll.mdb
+C:\Users\mattp\Documents\GitHub\FRCSB\FRCSB\FRCSB.FRC\bin\Debug\FRCSB.FRC.dll.mdb
