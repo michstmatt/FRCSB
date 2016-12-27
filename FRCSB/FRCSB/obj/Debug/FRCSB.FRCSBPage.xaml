@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:FRCSB" 
+	x:Class="FRCSB.FRCSBPage" 
+	Title="FRC Scoreboard"
+	BackgroundColor="{DynamicResource PrimaryDark}"
+	NavigationPage.BackButtonTitle="Back"
+	IsBusy="{Binding IsBusy.Value, Mode=OneWay}"
+	>
+	<ContentPage.Content>
+		<StackLayout>
+			<SearchBar x:Name="txtSearch" Placeholder="Search Teams and Events" IsVisible="{Binding ShowSearch.Value}"/>
+			<ListView x:Name="lsvItems" Margin="5,0" ItemsSource="{Binding items.Value}" BackgroundColor="{DynamicResource PrimaryDark}"
+			          IsPullToRefreshEnabled="True"
+				RefreshCommand="{Binding LoadDataCommand}"
+          IsRefreshing="{Binding IsBusy.Value, Mode=OneWay}">
+				<ListView.ItemTemplate>
+						<DataTemplate>
+						<TextCell Text="{Binding value}" TextColor="{DynamicResource TextIcon}" />
+						</DataTemplate>
+				</ListView.ItemTemplate>
+				</ListView>
+
+		</StackLayout>
+	</ContentPage.Content>
+
+
+
+
+
+
+</ContentPage>

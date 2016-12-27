@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="PrimaryDark">#455A64</Color>
+			<Color x:Key="Primary">#607D8B</Color>
+			<Color x:Key="PrimaryLight">#CFD8DC</Color>
+			<Color x:Key="TextIcon">#FFFFFF</Color>
+			<Color x:Key="Accent">#FF5252</Color>
+			<Color x:Key="PrimaryText">#212121</Color>
+			<Color x:Key="Divider">#BDBDBD</Color>
+
+			<Style x:Key="LabelStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{DynamicResource TextIcon}"/>
+				<Setter Property="FontFamily" Value="Helvetica"/>
+			</Style>
+
+			
+			<Style x:Key="LabelSmall" TargetType="Label" BaseResourceKey="LabelStyle">
+				<Setter Property="FontSize" Value="Medium" />
+			</Style>
+
+			<Style x:Key="LabelLarge" TargetType="Label" BaseResourceKey="LabelStyle">
+				<Setter Property="FontSize" Value="Large" />
+			</Style>
+			
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

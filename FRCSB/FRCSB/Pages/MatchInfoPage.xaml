@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.MatchInfoPage" BackgroundColor="{DynamicResource PrimaryDark}">
+	<ContentPage.Content>
+		<StackLayout>
+			<Grid BackgroundColor="{DynamicResource TextIcon}" Margin="0,5" >
+						<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="10"/>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<StackLayout Grid.Column="0" Margin="0,5">
+								<Label Text="{Binding alliances.blue.fixedTeams[0]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.blue.fixedTeams[1]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.blue.fixedTeams[2]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
+							</StackLayout>
+
+							<Label Grid.Column="1" Text="{Binding alliances.blue.score}" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelLarge}"/>
+
+
+
+								
+
+							<Label Grid.Column="1" Margin="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" VerticalOptions="Start" Style="{DynamicResource LabelSmall}" Text="{Binding matchNumber}" />
+							<Label Grid.Column="2"  Text="-" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="{DynamicResource Divider}"/>
+							<Label Grid.Column="1" Margin="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="End" VerticalOptions="End" Style="{DynamicResource LabelSmall}" Text="{Binding timeString}" />
+							
+
+							<Label Grid.Column="3" Text="{Binding alliances.red.score}" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="{DynamicResource Accent}" Style="{DynamicResource LabelLarge}"/>
+							
+
+							<StackLayout Grid.Column="4" Margin="0,5">
+								<Label Text="{Binding alliances.red.fixedTeams[0]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Accent}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.red.fixedTeams[1]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Accent}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.red.fixedTeams[2]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Accent}" Style="{DynamicResource LabelSmall}"/>
+							</StackLayout>
+
+							
+						</Grid>
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

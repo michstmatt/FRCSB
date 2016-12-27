@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.TeamInfoPage" BackgroundColor="{DynamicResource PrimaryDark}"  >
+	<ContentPage.Content>
+		<ScrollView>
+		<StackLayout Margin="10" >
+				<Label Text="{Binding fullName}" Style="{DynamicResource LabelLarge}" TextColor="{DynamicResource TextIcon}"/>
+
+				<StackLayout Orientation="Horizontal">
+				<Label Text="Motto:" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource Accent}"/>
+					<Label Text="{Binding motto}" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource TextIcon}"/>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal">
+				<Label Text="Location:" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource Accent}"/>
+					<Label Text="{Binding location}" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource TextIcon}"/>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal">
+				<Label Text="Rookie Year:" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource Accent}"/>
+					<Label Text="{Binding rookie_year}" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource TextIcon}"/>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal">
+				<Label Text="Website:" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource Accent}"/>
+					<Label Text="{Binding website}" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource PrimaryLight}" Font="Underline"/>
+				</StackLayout>
+
+				
+				<Label Text="Sponsors" Style="{DynamicResource LabelSmall}" TextColor="{DynamicResource Accent}"/>
+				<ListView ItemsSource="{Binding sponsorList}" BackgroundColor="{DynamicResource PrimaryDark}" HeightRequest="200"  Margin="2">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<TextCell Text="{Binding}" TextColor="{DynamicResource TextIcon}" />
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+
+				
+		</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
