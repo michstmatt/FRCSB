@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.TeamInfoPage" BackgroundColor="{DynamicResource PrimaryDark}"  >
 	<ContentPage.Content>
 		<ScrollView>
-		<StackLayout Margin="10" >
+		<StackLayout Padding="10" >
 				<Label Text="{Binding fullName}" Style="{DynamicResource LabelLarge}" TextColor="{DynamicResource TextIcon}"/>
 
 				<StackLayout Orientation="Horizontal">

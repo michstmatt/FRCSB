@@ -2,11 +2,11 @@
 # [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.4.0.20/lib/mtouch/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.4.0.20/lib/mtouch/mtouch.exe \
 	--cache \
-	/Users/matt/Projects/FRCSB/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/matt/Documents/FRCSB/FRCSB/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/matt/Projects/FRCSB/iOS/bin/iPhoneSimulator/Debug/FRCSB.iOS.app \
+	/Users/matt/Documents/FRCSB/FRCSB/iOS/bin/iPhoneSimulator/Debug/FRCSBiOS.app \
 	--executable \
-	FRCSB.iOS \
+	FRCSBiOS \
 	--fastdev \
 	--debug \
 	--profiling \
@@ -21,7 +21,7 @@
 	--tls-provider=default \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/matt/Projects/FRCSB/iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/matt/Documents/FRCSB/FRCSB/iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -30,17 +30,17 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	-r \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
-	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
-	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
-	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
-	-r \
-	/Users/matt/Projects/FRCSB/FRCSB/bin/Debug/FRCSB.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/FRCSB/bin/Debug/FRCSB.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
@@ -306,19 +306,19 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/packages/Xamarin.Forms.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/FRCSB/bin/Debug/FRCSB.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/FRCSB/bin/Debug/FRCSB.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/FRCSB/bin/Debug/FRCSB.FRC.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/FRCSB/bin/Debug/FRCSB.FRC.dll \
 	-r \
-	/Users/matt/Projects/FRCSB/FRCSB/bin/Debug/Newtonsoft.Json.dll \
+	/Users/matt/Documents/FRCSB/FRCSB/FRCSB/bin/Debug/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/matt/Projects/FRCSB/iOS/bin/iPhoneSimulator/Debug//FRCSB.iOS.exe \
+	/Users/matt/Documents/FRCSB/FRCSB/iOS/bin/iPhoneSimulator/Debug//FRCSBiOS.exe \

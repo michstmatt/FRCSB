@@ -17,7 +17,7 @@
 
 			
 			<Style x:Key="LabelSmall" TargetType="Label" BaseResourceKey="LabelStyle">
-				<Setter Property="FontSize" Value="Medium" />
+				<Setter Property="FontSize" Value="Small" />
 			</Style>
 
 			<Style x:Key="LabelLarge" TargetType="Label" BaseResourceKey="LabelStyle">

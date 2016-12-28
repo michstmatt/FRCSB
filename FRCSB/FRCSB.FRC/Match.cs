@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Net.Http;
+using System.Linq;
 namespace FRCSB.FRC
 {
 
@@ -34,6 +35,20 @@ namespace FRCSB.FRC
         public MatchAlliance red { get; set; }
     }
 
+	public class JsonScoreBreakDown
+	{
+		public Dictionary<string, object> blue { get; set; }
+		public Dictionary<string, object> red { get; set; }
+	}
+
+	public class ScoreBreakDown
+	{
+		public string Key { get; set; }
+		public object RedVal { get; set; }
+		public object BlueVal { get; set; }
+	}
+
+
     public class Match
     {
         public string comp_level { get; set; }
@@ -55,6 +70,10 @@ namespace FRCSB.FRC
                     return "Other";
             }
         }
+
+
+
+
         public int match_number { get; set; }
         public string matchNumber { get { return compLevel + " " + match_number.ToString(); } }
         public List<Video> videos { get; set; }
@@ -63,9 +82,29 @@ namespace FRCSB.FRC
         public int time { get; set; }
 		public string timeString { get { return new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).AddSeconds(time).ToLocalTime().ToString("MM/dd hh:mm"); } }
 
-		public object score_breakdown { get; set; }
+		public JsonScoreBreakDown score_breakdown { get; set; }
+		public List<ScoreBreakDown> ScoreBreakdown
+		{
+			get
+			{
+				return score_breakdown.blue.Select((arg) => new ScoreBreakDown() { Key = arg.Key, RedVal = score_breakdown.red[arg.Key], BlueVal = arg.Value }).ToList();
+
+			}
+		}
         public Alliances alliances { get; set; }
         public string event_key { get; set; }
+
+		public string videoLink
+		{
+			get
+			{
+				
+				if(videos!=null && videos.Count!=0)
+					return "http://www.youtube.com/watch?v=" + videos.First().key;
+				return "http://www.youtube.com";
+					
+			}
+		}
     }
 
 

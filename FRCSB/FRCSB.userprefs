@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{3F237622-618D-40AC-83BE-0EA3B74E5B1A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FRCSB.FRC/TeamService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FRCSB.FRC/Match.cs">
     <Files>
-      <File FileName="FRCSB.FRC/FRCObjectListService.cs" Line="60" Column="16" />
-      <File FileName="FRCSB/App.xaml" Line="11" Column="25" />
-      <File FileName="FRCSB.FRC/FRC.cs" Line="37" Column="29" />
       <File FileName="FRCSB/Pages/MatchListPage.xaml.cs" Line="77" Column="42" />
       <File FileName="FRCSB/Pages/TeamPage.xaml.cs" Line="19" Column="39" />
       <File FileName="iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="FRCSB.FRC/TeamModel.cs" Line="31" Column="29" />
-      <File FileName="FRCSB.FRC/TeamService.cs" Line="48" Column="4" />
+      <File FileName="FRCSB.FRC/Match.cs" Line="85" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

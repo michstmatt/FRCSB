@@ -11,8 +11,8 @@
 			>
 			<ListView.GroupHeaderTemplate>
 			<DataTemplate>
-					<ViewCell Height="18" >
-					<Label Text="{Binding Header}" Style="{DynamicResource LabelLarge}" BackgroundColor="{DynamicResource Primary}"/>
+					<ViewCell  >
+					<Label  Text="{Binding Header}" Style="{DynamicResource LabelLarge}" BackgroundColor="{DynamicResource Primary}"/>
 					</ViewCell>
 			</DataTemplate></ListView.GroupHeaderTemplate>
 		

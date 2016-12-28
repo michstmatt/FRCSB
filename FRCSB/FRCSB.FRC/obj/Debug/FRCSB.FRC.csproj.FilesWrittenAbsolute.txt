@@ -4,3 +4,11 @@
 /Users/matt/Projects/FRCSB/FRCSB.FRC/obj/Debug/FRCSB.FRC.dll
 /Users/matt/Projects/FRCSB/FRCSB.FRC/obj/Debug/FRCSB.FRC.dll.mdb
 /Users/matt/Projects/FRCSB/FRCSB.FRC/bin/Debug/Newtonsoft.Json.dll
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/bin/Debug/FRCSB.FRC.dll.mdb
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/bin/Debug/FRCSB.FRC.pdb
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/bin/Debug/FRCSB.FRC.dll
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/obj/Debug/FRCSB.FRC.dll
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/obj/Debug/FRCSB.FRC.dll.mdb
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/obj/Debug/FRCSB.FRC.pdb
+/Users/matt/Documents/FRCSB/FRCSB/FRCSB.FRC/bin/Debug/Newtonsoft.Json.dll

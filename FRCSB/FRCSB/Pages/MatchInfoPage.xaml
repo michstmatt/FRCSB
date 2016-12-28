@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FRCSB.MatchInfoPage" BackgroundColor="{DynamicResource PrimaryDark}">
 	<ContentPage.Content>
-		<StackLayout>
-			<Grid  Padding="0,5" >
+		<StackLayout Padding="2,2,2,0" >
+		<WebView HeightRequest="350" WidthRequest="10000" HorizontalOptions="FillAndExpand" >
+				<WebView.Source>
+				<UrlWebViewSource Url="{Binding videoLink}"/>
+				</WebView.Source>
+			
+				</WebView>
+
+
+
+			
+						<Grid Padding="5" HeightRequest="200" >
 						<Grid.ColumnDefinitions>
 								<ColumnDefinition Width="*"/>
 								<ColumnDefinition Width="*"/>
@@ -12,12 +22,12 @@
 							</Grid.ColumnDefinitions>
 
 							<StackLayout Grid.Column="0" Margin="0,5">
-								<Label Text="{Binding alliances.blue.fixedTeams[0]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
-								<Label Text="{Binding alliances.blue.fixedTeams[1]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
-								<Label Text="{Binding alliances.blue.fixedTeams[2]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.blue.fixedTeams[0]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource PrimaryLight}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.blue.fixedTeams[1]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource PrimaryLight}" Style="{DynamicResource LabelSmall}"/>
+								<Label Text="{Binding alliances.blue.fixedTeams[2]}" HorizontalTextAlignment="Center" TextColor="{DynamicResource PrimaryLight}" Style="{DynamicResource LabelSmall}"/>
 							</StackLayout>
 
-							<Label Grid.Column="1" Text="{Binding alliances.blue.score}" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="{DynamicResource Primary}" Style="{DynamicResource LabelLarge}"/>
+							<Label Grid.Column="1" Text="{Binding alliances.blue.score}" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="{DynamicResource PrimaryLight}" Style="{DynamicResource LabelLarge}"/>
 
 
 
@@ -39,7 +49,21 @@
 
 							
 						</Grid>
-			
-		</StackLayout>
+			<Label Text="Score Breakdown" Style="{DynamicResource LabelLarge}" Margin="0,10,0,5"/>
+			<ListView ItemsSource="{Binding ScoreBreakdown}" BackgroundColor="{DynamicResource PrimaryDark}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Grid>
+								
+								<Label Text="{Binding BlueVal}" TextColor="{DynamicResource PrimaryLight}" Style="{DynamicResource LabelSmall}" HorizontalOptions="Start" />
+								<Label Text="{Binding Key}" TextColor="{DynamicResource TextIcon}" Style="{DynamicResource LabelSmall}" HorizontalOptions="Center"/>
+								<Label Text="{Binding RedVal}" TextColor="{DynamicResource Accent}" Style="{DynamicResource LabelSmall}" HorizontalOptions="End"/>
+							</Grid>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
